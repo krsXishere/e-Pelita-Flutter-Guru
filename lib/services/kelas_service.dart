@@ -42,12 +42,12 @@ class KelasService {
 
         return kelass;
       } else {
-        final kelas = jsonDecode(response.body)['data'] as List;
-        print(kelas);
+        // final kelas = jsonDecode(response.body)['data'] as List;
+        // print(kelas);
         return [];
       }
     } catch (e) {
-      print(e);
+      // print(e);
       throw Exception("Get kelas gagal.\nError: $e");
     }
   }

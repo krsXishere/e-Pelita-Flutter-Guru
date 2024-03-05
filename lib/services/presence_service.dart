@@ -66,12 +66,12 @@ class PresenceService {
 
         return presensis;
       } else {
-        final presensi = jsonDecode(response.body)['data'] as List;
-        print(presensi);
+        // final presensi = jsonDecode(response.body)['data'] as List;
+        // print(presensi);
         return [];
       }
     } catch (e) {
-      print(e);
+      // print(e);
       throw Exception("Get presensi gagal.\nError: $e");
     }
   }
@@ -97,14 +97,14 @@ class PresenceService {
       );
 
       if (response.statusCode == 200) {
-        print(response.body);
+        // print(response.body);
         return true;
       } else {
-        print(response.body);
+        // print(response.body);
         return false;
       }
     } catch (e) {
-      print(e);
+      // print(e);
       throw Exception("Verifikasi presensi gagal.\nError: $e");
     }
   }
